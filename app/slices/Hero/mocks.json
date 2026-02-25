@@ -1,0 +1,71 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Scientific Testing hello",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ea duis fugiat labore nulla enim magna. Eiusmod incididunt tempor elit aliquip. Exercitation magna in eu cupidatat laborum eiusmod mollit irure dolor fugiat dolore deserunt laborum ad."
+						}
+					}
+				]
+			},
+			"ctas": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "a322d2bf-d5fe-46b9-ba2d-8022aaffb760",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "http://google.com",
+							"text": "famous"
+						}
+					}
+				]
+			},
+			"image": {
+				"__TYPE__": "ImageContent",
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1591383496652-db773e57b1d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxnYXJkZW58ZW58MHx8fHwxNzcyMDI3NDEwfDA&ixlib=rb-4.1.0&q=85",
+				"alt": "brown wooden bench under green tree during daytime",
+				"origin": {
+					"id": "KLcaQxlmhtk",
+					"url": "https://images.unsplash.com/photo-1591383496652-db773e57b1d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxnYXJkZW58ZW58MHx8fHwxNzcyMDI3NDEwfDA&ixlib=rb-4.1.0&q=85",
+					"width": 4608,
+					"height": 3072
+				},
+				"width": 4608,
+				"height": 3072,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"thumbnails": {}
+			}
+		},
+		"items": []
+	}
+]

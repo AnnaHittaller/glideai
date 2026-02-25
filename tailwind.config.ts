@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
 
 export default <Partial<Config>>{
-    content: ["./app/**/*{js, ts, vue}"],
+    content: ["./app/**/*.{js,ts,vue}"],
 }
