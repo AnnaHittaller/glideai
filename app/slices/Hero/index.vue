@@ -84,14 +84,26 @@ onMounted(() => {
   >
     <div class="hero text-center relative">
       <GlideGrid />
-      <h1
-        class="hero__heading mx-auto max-w-3xl text-balance text-5xl font-medium md:text-7xl"
-      >
-        <PrismicText :field="slice.primary.heading" />
-      </h1>
-      <p class="hero__body mx-auto mt-6 max-w-md text-balance !text-gray-300">
-        <PrismicText :field="slice.primary.body" />
-      </p>
+      <PrismicRichText
+        :field="slice.primary.heading"
+        :components="{
+          heading1: {
+            as: 'h1',
+            class:
+              'hero__heading mx-auto max-w-3xl text-balance text-5xl font-medium md:text-7xl',
+          },
+        }"
+      />
+      <PrismicRichText
+        :field="slice.primary.body"
+        :components="{
+          paragraph: {
+            as: 'p',
+            class:
+              'hero__body mx-auto mt-6 max-w-md text-balance text-gray-300',
+          },
+        }"
+      />
       <div class="flex flex-wrap gap-8 justify-center mt-8">
         <PrismicLink
           v-for="link in slice.primary.ctas"
