@@ -21,8 +21,6 @@ export default defineNuxtConfig({
     endpoint: apiEndpoint || repositoryName,
     preview: '/api/preview',
     imports: 'all',
-    /** Required for PrismicLink/asLink href resolution; routes alone are not passed to the Vue plugin. See https://prismic.io/docs/routes */
-    linkResolver: '~/app/prismic/linkResolver',
     clientConfig: {
       routes: [
         { type: 'page', uid: 'home', path: '/' },
