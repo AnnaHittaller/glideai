@@ -8,13 +8,8 @@
       'text-5xl',
       'md:text-7xl',
       'font-medium',
-      className,
     ]"
   >
     <slot />
   </h2>
 </template>
-
-<script setup lang="ts">
-defineProps<{ className?: string }>();
-</script>
