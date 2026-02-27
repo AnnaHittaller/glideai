@@ -5,18 +5,9 @@ defineProps(getSliceComponentProps<Content.RichTextSlice>());
 </script>
 
 <template>
-  <section>
-    <PrismicRichText :field="slice.primary.content" />
-  </section>
+  <BoundedContainer>
+    <div class="prose prose-invert prose-slate w-full">
+      <PrismicRichText :field="slice.primary.content" />
+    </div>
+  </BoundedContainer>
 </template>
-
-<style scoped>
-section {
-  max-width: 600px;
-  margin: 6em auto;
-}
-
-section:deep(.codespan) {
-  font-family: monospace;
-}
-</style>

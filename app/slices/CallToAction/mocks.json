@@ -21,8 +21,8 @@
 				"type": "Link",
 				"value": [
 					{
-						"__TYPE__": "LinkContent",
 						"key": "2426fac1-16ff-49ba-9f87-da213c9dbdd0",
+						"__TYPE__": "LinkContent",
 						"value": {
 							"__TYPE__": "ExternalLink",
 							"url": "http://twitter.com",
