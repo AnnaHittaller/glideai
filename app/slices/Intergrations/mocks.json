@@ -1,0 +1,123 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Integrations galore.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "The integrations your team needs to be productive at scale with no impact on your burn rate.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"integrations": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_id",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "simple-icons:storybook"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_id",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "simple-icons:contentful"
+								}
+							]
+						],
+						"key": "3db28591-1f81-4f4b-b7be-27a921b4c90c"
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_id",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "simple-icons:prismic"
+								}
+							]
+						],
+						"key": "d1a1884d-b1d6-4c1b-8a3a-3d9047c903cb"
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_id",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "simple-icons:nuxtdotjs"
+								}
+							]
+						],
+						"key": "3ffdbe9c-4b47-4861-acf3-f6c646af2037"
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_id",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "simple-icons:nextdotjs"
+								}
+							]
+						],
+						"key": "3ceef04f-5f54-4fad-a045-86a2429b9fae"
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_id",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "simple-icons:storyblok"
+								}
+							]
+						],
+						"key": "c094c56e-5331-4eb7-9f8a-9f28ea421508"
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

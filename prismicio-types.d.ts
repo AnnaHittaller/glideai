@@ -168,6 +168,7 @@ export type CaseStudyDocument<Lang extends string = string> =
   >;
 
 type PageDocumentDataSlicesSlice =
+  | IntergrationsSlice
   | CaseStudiesSlice
   | ShowcaseSlice
   | BentoSlice
@@ -601,6 +602,88 @@ type HeroSliceVariation = HeroSliceDefault;
 export type HeroSlice = prismic.SharedSlice<"hero", HeroSliceVariation>;
 
 /**
+ * Item in *Intergrations → Default → Primary → Integrations*
+ */
+export interface IntergrationsSliceDefaultPrimaryIntegrationsItem {
+  /**
+   * Icon ID field in *Intergrations → Default → Primary → Integrations*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: simple-icons:prismic
+   * - **API ID Path**: intergrations.default.primary.integrations[].icon_id
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  icon_id: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *Intergrations → Default → Primary*
+ */
+export interface IntergrationsSliceDefaultPrimary {
+  /**
+   * Heading field in *Intergrations → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: intergrations.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Body field in *Intergrations → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: intergrations.default.primary.body
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  body: prismic.RichTextField;
+
+  /**
+   * Integrations field in *Intergrations → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: intergrations.default.primary.integrations[]
+   * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
+   */
+  integrations: prismic.GroupField<
+    Simplify<IntergrationsSliceDefaultPrimaryIntegrationsItem>
+  >;
+}
+
+/**
+ * Default variation for Intergrations Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type IntergrationsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<IntergrationsSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Intergrations*
+ */
+type IntergrationsSliceVariation = IntergrationsSliceDefault;
+
+/**
+ * Intergrations Shared Slice
+ *
+ * - **API ID**: `intergrations`
+ * - **Description**: Intergrations
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type IntergrationsSlice = prismic.SharedSlice<
+  "intergrations",
+  IntergrationsSliceVariation
+>;
+
+/**
  * Primary content in *RichText → Default → Primary*
  */
 export interface RichTextSliceDefaultPrimary {
@@ -864,6 +947,11 @@ declare module "@prismicio/client" {
       HeroSliceDefaultPrimary,
       HeroSliceVariation,
       HeroSliceDefault,
+      IntergrationsSlice,
+      IntergrationsSliceDefaultPrimaryIntegrationsItem,
+      IntergrationsSliceDefaultPrimary,
+      IntergrationsSliceVariation,
+      IntergrationsSliceDefault,
       RichTextSlice,
       RichTextSliceDefaultPrimary,
       RichTextSliceVariation,
